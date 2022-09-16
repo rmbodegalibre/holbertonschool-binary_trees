@@ -8,11 +8,12 @@
  * The value in the node must be passed as a parameter to this function.
  * If tree or func is NULL, do nothing
  */
+
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (func == NULL || tree == NULL)
 	{
-				return;
+		return;
 	}
 
 	func(tree->n);
